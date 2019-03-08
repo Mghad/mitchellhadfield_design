@@ -6,13 +6,13 @@ class MitchellhadfieldDesign(TethysAppBase):
     Tethys app class for Mitchellhadfield Design.
     """
 
-    name = 'Mitchellhadfield Design'
+    name = 'MitchellHadfield Design'
     index = 'mitchellhadfield_design:home'
     icon = 'mitchellhadfield_design/images/Untitled-18-512.png'
     package = 'mitchellhadfield_design'
     root_url = 'mitchellhadfield-design'
     color = '#DA1EC6'
-    description = 'Place a brief description of your app here.'
+    description = 'this app shows my wireframe mockup and proposal'
     tags = ''
     enable_feedback = False
     feedback_emails = []
@@ -34,6 +34,12 @@ class MitchellhadfieldDesign(TethysAppBase):
                 name='page',
                 url='mitchellhadfield-design',
                 controller='mitchellhadfield_design.controllers.page'
+            ),
+
+            UrlMap(
+                name='cheese',
+                url='mitchellhadfield-design',
+                controller='mitchellhadfield_design.controllers.cheese'
             ),
         )
 
