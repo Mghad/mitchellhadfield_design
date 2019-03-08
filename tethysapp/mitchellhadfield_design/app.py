@@ -8,7 +8,7 @@ class MitchellhadfieldDesign(TethysAppBase):
 
     name = 'Mitchellhadfield Design'
     index = 'mitchellhadfield_design:home'
-    icon = 'mitchellhadfield_design/images/icon.gif'
+    icon = 'mitchellhadfield_design/images/Untitled-18-512.png'
     package = 'mitchellhadfield_design'
     root_url = 'mitchellhadfield-design'
     color = '#DA1EC6'
@@ -28,6 +28,12 @@ class MitchellhadfieldDesign(TethysAppBase):
                 name='home',
                 url='mitchellhadfield-design',
                 controller='mitchellhadfield_design.controllers.home'
+            ),
+
+            UrlMap(
+                name='page',
+                url='mitchellhadfield-design',
+                controller='mitchellhadfield_design.controllers.page'
             ),
         )
 
