@@ -8,24 +8,26 @@ def home(request):
     Controller for the app home page.
     """
 
-    context={}
+    context = {}
 
     return render(request, 'mitchellhadfield_design/home.html', context)
 
+@login_required()
 def page(request):
     """
     Controller for the app home page.
     """
 
-    context={}
+    context = {}
 
     return render(request, 'mitchellhadfield_design/page.html', context)
 
+@login_required()
 def cheese(request):
     """
     Controller for the app home page.
     """
 
-    context={}
+    context = {}
 
     return render(request, 'mitchellhadfield_design/cheese.html', context)

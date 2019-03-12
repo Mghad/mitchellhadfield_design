@@ -32,13 +32,13 @@ class MitchellhadfieldDesign(TethysAppBase):
 
             UrlMap(
                 name='page',
-                url='mitchellhadfield-design',
+                url='proposal',
                 controller='mitchellhadfield_design.controllers.page'
             ),
 
             UrlMap(
                 name='cheese',
-                url='mitchellhadfield-design',
+                url='wireframes',
                 controller='mitchellhadfield_design.controllers.cheese'
             ),
         )
