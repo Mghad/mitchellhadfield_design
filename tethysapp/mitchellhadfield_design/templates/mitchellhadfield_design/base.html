@@ -13,9 +13,9 @@
 {% block app_title %}{{ tethys_app.name }}{% endblock %}
 
 {% block app_navigation_items %}
-  {% url 'mitchellhadfield_design:home' as home_url %}
-  {% url 'mitchellhadfield_design:page' as page_url %}
-  {% url 'mitchellhadfield_design:cheese' as cheese_url %}
+{% url 'mitchellhadfield_design:home' as home_url %}
+{% url 'mitchellhadfield_design:page' as page_url %}
+{% url 'mitchellhadfield_design:cheese' as cheese_url %}
 
   <li class="title">App Navigation</li>
   <li class="{% if request.path == home_url %}active{% endif %}" id="txtclr"><a href="{{ home_url }}">Home Page</a></li>
